@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- definition of simple elements -->
+  <xs:element name="Id" type="xs:string"/>
+  <xs:element name="Name" type="xs:string"/>
+  <xs:element name="Description" type="xs:string"/>
+
+  <!-- definition of attributes -->
+  <xs:attribute name="DocumentType" type="xs:string"/>
+  <xs:attribute name="Version" type="xs:string"/>
+
+  <!-- definition of complex elements -->
+  <xs:element name="Vendor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Id"/>
+        <xs:element ref="Name"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Item">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Id"/>
+        <xs:element ref="Name"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="vendors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Vendor" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="items">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Item" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Order">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="vendors"/>
+        <xs:element ref="items"/>
+        <xs:element ref="Id"/>
+        <xs:element ref="Name"/>
+        <xs:element ref="Description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="DataBoundControlsDataStore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Order"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="DocumentRefreshTemplates">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DataBoundControlsDataStore"/>
+        <xs:any minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Document">
+    <xs:complexType>
+      <xs:attribute ref="DocumentType" use="optional"/>
+      <xs:attribute ref="Version" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="DocumentProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DocumentRefreshTemplates"/>
+        <xs:element ref="Document"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
