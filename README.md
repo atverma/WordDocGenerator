@@ -6,22 +6,7 @@ WordDocumentGenerator is an utility to generate Word documents from templates us
 WordDocumentGenerator helps generate Word documents both non-refresh-able as well as refresh-able based on predefined templates using minimum code changes.
 Content controls are used as placeholders for document generation.
 
-Document generation is quite easy as code changes required are very less. A few images of document generation/refresh is displayed below
-
-
-Template -> Document generation
-
-https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/01/37/36/metablogapi/2313.3_4403E92E.png
-
-Template -> Document generation -> Document Refresh
-
-https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/01/37/36/metablogapi/1212.1_thumb_1B24E5F3.png
-
-Document Refresh from within Word
-
-https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/01/37/36/metablogapi/6082.2_thumb_3E813EBE.png
-
-Mostly one just needs to override these five methods while coding a new generator class. Sample generators have been provided in utility's source code. 
+Document generation is quite easy as code changes required are very less. Mostly one just needs to override these five methods while coding a new generator class. Sample generators have been provided in utility's source code. 
 
         /// <summary>
         /// Gets the place holder tag to type collection.
