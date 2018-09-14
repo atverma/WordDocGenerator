@@ -1,6 +1,6 @@
 # WordDocGenerator
 
-Codeplex project has been moved to https://archive.codeplex.com/?p=worddocgenerator 
+Codeplex project @ https://archive.codeplex.com/?p=worddocgenerator has been moved to GitHub along with updating to latest .NET Framework and DocumentFormat.OpenXml.
 
 WordDocumentGenerator is an utility to generate Word documents from templates using Visual Studio 2017, .NET Framework 4.7 and DocumentFormat.OpenXml 2.8.1.
 WordDocumentGenerator helps generate Word documents both non-refresh-able as well as refresh-able based on predefined templates using minimum code changes.
