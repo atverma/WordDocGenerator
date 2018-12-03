@@ -82,7 +82,16 @@ Saving the Xml e.g. serialized object which will be the data store for data boun
 
 
 You can read more about it at
-http://blogs.msdn.com/b/atverma/archive/2011/12/31/utility-to-generate-word-documents-from-templates-using-visual-studio-2010-and-open-xml-2-0-sdk.aspx
-http://blogs.msdn.com/b/atverma/archive/2012/01/08/utility-to-generate-word-documents-from-templates-using-visual-studio-2010-and-open-xml-2-0-sdk-part-2-samples-updated.aspx
-http://blogs.msdn.com/b/atverma/archive/2012/01/11/utility-to-generate-word-documents-from-templates-using-visual-studio-2010-and-open-xml-2-0-sdk-part-3.aspx
-http://blogs.msdn.com/b/atverma/archive/2012/01/11/utility-to-generate-word-documents-from-templates-using-visual-studio-2010-and-open-xml-2-0-sdk-part-4.aspx
+https://appdevmusings.com/utility-to-generate-word-documents-from-templates-using-visual-studio-2017-and-documentformat-openxml-2-8/
+
+Part 1:
+https://appdevmusings.com//utility-to-generate-word-documents-from-templates-using-visual-studio-2010-and-open-xml-2-0-sdk
+
+Part 2:
+https://appdevmusings.com//utility-to-generate-word-documents-from-templates-using-visual-studio-2010-and-open-xml-2-0-sdk-part-2-samples-updated
+
+Part 3:
+https://appdevmusings.com//utility-to-generate-word-documents-from-templates-using-visual-studio-2010-and-open-xml-2-0-sdk-part-3
+
+Part 4:
+https://appdevmusings.com//utility-to-generate-word-documents-from-templates-using-visual-studio-2010-and-open-xml-2-0-sdk-part-4
